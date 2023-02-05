@@ -1,0 +1,170 @@
+<html>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+
+        background-image: url(https://images.pexels.com/photos/597200/pexels-photo-597200.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+/* 
+        background-image: url(https://images.pexels.com/photos/5245865/pexels-photo-5245865.jpeg?auto=compress&cs=tinysrgb&w=1200); */
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    header {
+        background-color: 698269;
+        padding: 20px;
+        text-align: center;
+    }
+
+    header h1 {
+        color: E5FDD1;
+        margin: 0;
+    }
+
+    nav {
+        background-color: C9F4AA;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul {
+        display: inline-flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav a {
+        color: 698269;
+        display: block;
+        padding: 20px;
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        background-color: lightgreen;
+    }
+
+    main {
+        color: AA5656;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 800px;
+        padding: 20px;
+    }
+
+    section {
+        background-color: F1DBBF;
+        border-radius: 10px;
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    section h2 {
+        color: B99B6B;
+        margin: 0;
+    }
+
+    footer {
+        background-color: 698269;
+        padding: 20px;
+        text-align: center;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+        display: block;
+        margin: 10px auto;
+        width: 100%;
+    }
+
+    section form label {
+        display: block;
+        text-align: left;
+    }
+
+    section form input[type="submit"] {
+        background-color: #4CAF50;
+        /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+    }
+</style>
+
+<head>
+    <title>Eco Traveller</title>
+
+<body>
+
+    <header>
+        <h1>Eco Traveller</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="about-us.html">About</a></li>
+            <li><a href="__index.html">Features</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>About Eco Traveller</h2>
+            <p>Finding eco-friendly lodging and activities is difficult for travellers because there aren't many options
+                for sustainable tourism. Therefore, a sustainable tourism software that makes it simple to locate
+                information about ethical and sustainable travel is absolutely necessary. That's where Eco Traveller
+                comes in.</p>
+        </section>
+        <section id="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Easy to use interface</li>
+                <li>Information on eco-friendly lodgings and activities</li>
+                <li>Sustainable travel options for your next trip</li>
+                <li>Filter options for specific sustainability criteria</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="submit.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="3" placeholder="Enter your message"
+                        required></textarea>
+                </div>
+                <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; Eco Traveller 2020</p>
+    </footer>
+</body>
+</head>
+
+</html>
